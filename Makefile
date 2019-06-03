@@ -10,7 +10,7 @@ wasm: bindgen
 	@$(CC) $(CFLAGS) re.c bindings.cpp -o re.wasm
 
 all: wasm
-	wasm2lua re.wasm re.lua -b re.idl --libmode --pureLua
+	wasm2lua re.wasm re.lua -b re.idl --libmode --pureLua --minify
 
 clean:
 	@rm -f re.wasm
