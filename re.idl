@@ -1,0 +1,8 @@
+interface re_t {
+    
+};
+
+namespace global {
+    re_t re_compile(DOMString pattern);
+    int re_matchp(re_t pattern, DOMString text);
+};
