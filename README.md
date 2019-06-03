@@ -10,7 +10,7 @@ Make sure you have wasm2lua and wasi-sdk installed
 
 ## Usage
 
-``lua
+```lua
 local module = dofile("re.lua")
 
 module.init()
